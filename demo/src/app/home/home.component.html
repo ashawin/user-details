@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<tr>
+		<th>Id#</th>
+		<th>name</th>
+		<th>Email</th>
+		<th>Edit</th>
+		<th>Delete</th>
+	</tr>
+	<tr ng-repeat="user in users">
+		<td>{{user.name}}</td>
+		<td>{{user.email}}</td>
+		<td>{{user.mobile}}</td>
+		<td><button ng-click="editUser(user.id)"></button></td>
+		<td><button ng-click="deleteUser(user.id)"></button></td>
+		
+	</tr>
+	</table>
+<button (click)="logout()">Logout</button>
+</body>
+</html>
+
+
+
+
+
+

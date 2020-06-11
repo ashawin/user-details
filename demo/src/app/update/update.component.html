@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register-Form</title>
+</head>
+<body>
+	<div class="container">
+		<p *ngIf="msg">Suceesfully Updated</p>
+		<form [formGroup]="ngForm" (ngSubmit)="update(ngForm.value)">
+			<div class="form-group">
+				<label>Name</label>
+				<input type="text" name="name" formControlName="username" required  class="form-control" value="{{user.name}}">
+			</div>
+			<div class="form-group">
+				<label>Email
+				</label>
+				<input type="text" name="email" formControlName="useremail"  value="{{user.email}" required>
+			</div>
+			<div class="form-group">
+				<label>Mobile
+				</label>
+				<input type="text" name="mobile" formControlName="usermobile" value="{{user.mobile}}" required>
+			</div>
+			<input type="submit" value="Register">
+			
+		</form>
+
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<body>
+<div class="container">
+	<div>
+	<label>username</label>
+	<input #uname type="text" name="uname" placeholder="Enter username" required>
+	</div>
+	<div style="margin-top: 20px; mar">
+	<label>password</label>
+	<input #pass type="password" name="pass" placeholder="Enter password" required>
+</div>
+	<button (click)="login(uname.value,pass.value)">Submit</button>
+</div>
+</body>
+</html>
+
